@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>iCoder - Heaven for Programmers</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">Inviz</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">About Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Intraday</a></li>
+              <li><a class="dropdown-item" href="#">F&O</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">TA</a></li>
+              <li><a class="dropdown-item" href="#">FA</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html">Contact Us</a>
+          </li>
+        </ul>
+        <div>
+          <button class="btn btn-outline-success mx-2" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+          <button class="btn btn-outline-success mx-2" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+<!--  login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="loginModalLabel">Login to Inviz</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Signup modal-->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="signupModalLabel">Get an Inviz account</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Username</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Create an account</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div id="carouselExampleDark" class="carousel carousel-light slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active carousel-dark" data-bs-interval="10000">
+        <img src="./assets/FA.jpg" class="d-block w-100" alt="FA" style="height: 500px; width: 900px;">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Fundamental tools</h5>
+          <p>Do fundamental analysis with our tools</p>
+          <div class="button btn btn-primary">Get Pro</div>
+          <div class="button btn btn-danger">Get Premium</div>
+          <div class="button btn btn-success">Get gold</div>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img
+          src="https://yelza.com/hubfs/AI-Generated%20Media/Images/An%20image%20of%20a%20technical%20analysis%20chart%20with%20various%20indicators%20and%20patterns%2C%20showing%20historical%20price%20data%20and%20trends%20in%20the%20stock%20market.jpeg"
+          class="d-block w-100" alt="TA" style="height: 500px; width: 900px;">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Technical Analysis</h5>
+          <p>Explore our tools for a trading edge</p>
+          <div class="button btn btn-primary">Get Pro</div>
+          <div class="button btn btn-danger">Get Premium</div>
+          <div class="button btn btn-success">Get gold</div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.ifmcinstitute.com/storage/2022/09/Future-and-Options-Trading.jpg" class="d-block w-100"
+          alt="TA" style="height: 500px; width: 900px;">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Futures and Options</h5>
+          <p>Get all info about derivatives</p>
+          <div class="button btn btn-primary">Get Pro</div>
+          <div class="button btn btn-danger">Get Premium</div>
+          <div class="button btn btn-success">Get gold</div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div class="container">
+    <div class="row mb-2 mt-5">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary-emphasis">Technical Analysis</strong>
+            <h3 class="mb-0">Get better technical analysis tools</h3>
+            <p class="card-text mt-auto">This is a wider card with supporting text below as a natural lead-in to
+              additional content.</p>
+            <div class="mb-2 text-body-secondary"> </div>
+            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+              Explore
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img
+              src="https://yelza.com/hubfs/AI-Generated%20Media/Images/An%20image%20of%20a%20technical%20analysis%20chart%20with%20various%20indicators%20and%20patterns%2C%20showing%20historical%20price%20data%20and%20trends%20in%20the%20stock%20market.jpeg"
+              alt="random image" width="200" height="250">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-danger">Fundamental Analysis</strong>
+            <h3 class="mb-0">Get better fundamental analysis tools</h3>
+            <div class="mb-1 text-body-secondary"></div>
+            <p class="mb-auto mt-2">This is a wider card with supporting text below as a natural lead-in to additional
+              content.</p>
+            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+              Explore
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="./assets/FA.jpg" alt="images" width="200" height="250">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-2 mt-5">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-warning">Derivatives</strong>
+            <h3 class="mb-0">Get better derivative tools</h3>
+            <p class="card-text mb-auto mt-2">This is a wider card with supporting text below as a natural lead-in to
+              additional content.</p>
+            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+              Explore
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="https://www.ifmcinstitute.com/storage/2022/09/Future-and-Options-Trading.jpg" alt="random image"
+              width="200" height="250">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">Bonds</strong>
+            <h3 class="mb-0">Invest in bonds from here</h3>
+            <p class="mb-auto mt-2">This is a wider card with supporting text below as a natural lead-in to additional
+              content.</p>
+            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+              Explore
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbuNUrIdoRJRLUXICwvg610leTN9lvciJpWw&s"
+              alt="image" width="200" height="250">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="container mt-5">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>© 2017–2024 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

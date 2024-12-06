@@ -1,0 +1,9 @@
+.carousel-indicators [data-bs-target].active {
+    background-color: black; /* Optional: Change the active indicator color */
+}
+
+@media (max-width: 575.98px) { /* to target xs phones*/
+    .carousel-indicators {
+      display: none;
+    }
+  }
